@@ -1,0 +1,570 @@
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-15">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home / X</title>
+   <link rel="shortcut icon" href="favicon.avif" type="image/x-icon">
+   <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-white font-sans">
+   <div class="mainCont flex relative justify-center">
+
+      <!-- left side starts here -->
+      <div class="left h-[100vh] xl:w-[25vw] pl-5 py-3 xl:pl-14 hidden sm:flex flex-col justify-between sticky top-0">
+         <div class="upper flex flex-col ">
+            <div class="pb-2 md:pl-2">
+               <img src="/img/x.svg" alt="">
+            </div>
+
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[50%]">
+               <div class=" flex gap-[15%]">
+                  <img src="/img/home.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px] font-bold">Home</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[55%]">
+               <div class=" flex gap-[15%]">
+                  <img src="/img/search.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">Explore</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[80%]">
+               <div class=" flex gap-[10%]">
+                  <img src="/img/notification.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">Notifications</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[70%]">
+               <div class=" flex gap-[10%]">
+                  <img src="/img/msg.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">Messages</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[50%]">
+               <div class=" flex gap-[15%]">
+                  <img src="/img/grook.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">Grok</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[50%]">
+               <div class=" flex gap-[15%]">
+                  <img src="/img/list.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">List</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[60%]">
+               <div class=" flex gap-[15%]">
+                  <img src="/img/profile.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">Profile</p>
+               </div>
+            </div>
+            <div class="hover:bg-[#444444] md:pl-2 rounded-3xl cursor-pointer py-[10px] lg:w-[50%]">
+               <div class=" flex gap-[15%]">
+                  <img src="/img/more.svg" alt="">
+                  <p class="hidden xl:inline-block text-[21px]">More</p>
+               </div>
+            </div>
+
+            <div class="bg-blue-500   w-[90%] hidden xl:flex justify-center py-3 my-4 rounded-3xl">
+               <p class="text-[20px] font-semibold">Post</p>
+            </div>
+            <div>
+               <img class="h-[50px] xl:hidden bg-white rounded-3xl" src="pictures/tweet.png" alt="">
+            </div>
+         </div>
+
+
+         <div class="lower">
+            <div class="flex rounded-3xl hover:bg-slate-800 px-2 py-2 gap-2">
+               <div class="img w-[50px] rounded-3xl flex justify-center">
+                  <img class=" rounded-3xl " src="pictures/profile.jpg" alt="">
+               </div>
+               <div class="hidden xl:inline-block content">
+                  <div class="name font-bold">Aman Upadhyay</div>
+                  <div class="username text-gray-500 text-[12px]">@AmanUpa59504263</div>
+               </div>
+               <div class="hidden xl:flex more justify-center">
+                  <img src="img/more2.svg" alt="" />
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- left side ends here -->
+
+
+      <!-- middle content section starts from here -->
+      <div class="middle min-w-[540px] w-[45vw] border-slate-700 border-x-[1px]">
+
+         <div
+            class="topHeader items-center sm:hidden header cursor-pointer flex justify-between w-[100%] h-[60px] sticky top-0 z-10  border-slate-700 bg-black bg-opacity-70 border-b px-3">
+            <div class="img w-[50px] h-[50px] rounded-3xl flex justify-center">
+               <img class=" rounded-3xl " src="pictures/profile.jpg" alt="">
+            </div>
+            <div class="pb-2 md:pl-2">
+               <img src="/img/x.svg" alt="">
+            </div>
+            <div class="w-[10%] flex justify-center items-center"><img src="/img/setting.svg" alt=""></div>
+         </div>
+         <div
+            class="header cursor-pointer hidden sm:flex justify-center w-[100%] h-[60px] sticky top-0 z-10  border-slate-700 bg-black bg-opacity-70 border-b">
+            <div class="w-[50%] font-bold flex justify-center items-center relative">For You <div class=" w-[20%]
+               absolute border-blue-600 border-2 rounded-3xl top-[56px]"></div>
+            </div>
+            <div class="w-[50%] flex justify-center items-center text-gray-600 font-semibold">Following</div>
+            <div class="w-[10%] flex justify-center items-center"><img src="/img/setting.svg" alt=""></div>
+         </div>
+
+         <div class="post  border-slate-700 border-b">
+            <div class="upper min-h-[70px] items-center flex gap-[10px] pl-4">
+               <div class="w-[40px] rounded-3xl"><img class="rounded-3xl" src="pictures/profile.jpg" alt=""></div>
+               <div><input class="bg-black row-span-4 text-white border-none text-[20px] outline-none max-h[100px]"
+                     type="text" name="post" id="post" placeholder="What is happening?!"></div>
+            </div>
+            <div class="lower min-h-[50px] items-center  flex">
+               <div class="left w-[60%] pl-[65px] flex gap-[20px]">
+                  <img class="rounded-3xl hover:bg-blue-900 cursor-pointer" src="img/photos.svg" alt="">
+                  <img class="rounded-3xl hover:bg-blue-900 cursor-pointer" src="img/gif.svg" alt="">
+                  <img class="rounded-3xl hover:bg-blue-900 cursor-pointer" src="img/poll.svg" alt="">
+                  <img class="rounded-3xl hover:bg-blue-900 cursor-pointer" src="img/emoji.svg" alt="">
+                  <img class="rounded-3xl hover:bg-blue-900 cursor-pointer" src="img/calender.svg" alt="">
+                  <img class="rounded-3xl hover:bg-blue-900 cursor-pointer" src="img/location.svg" alt="">
+               </div>
+               <div class="right flex justify-end w-[30%]">
+                  <div class="bg-blue-400 flex justify-center  rounded-3xl px-5 py-[5px] ">
+                     <p class="text-[16px] text-gray-200 font-semibold">Post</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="h-[50px] flex justify-center items-center  border-slate-700 border-b">
+            <p class="text-blue-400">Show 69 posts</p>
+         </div>
+
+         <div class="contentBox">
+
+            <div class="content  border-slate-700 border-b">
+               <div class="flex justify-between">
+                  <div class="flex rounded-3xl cursor-pointer px-2 py-2 gap-2 w-[100%]">
+                     <div class="img  w-[40px] rounded-3xl flex justify-center">
+                        <img class="w-[40px] h-[35px] rounded-3xl " src="pictures/dhruv.jpg" alt="">
+                     </div>
+                     <div class="w-[100%]">
+                        <div class="content flex gap-[5px] items-start">
+                           <div class="name font-bold flex gap-[3px] items-center">Dhruv Rathee<img src="img/verify.svg"
+                                 alt=""></div>
+                           <div class="username text-gray-500">@Dhruvratheeparody</div>
+                           <div class="username text-gray-500"> · 16h</div>
+                        </div>
+                        <div class="w-[100%]">Morality | Loyality</div>
+                        <div class="max-w[100%] pt-[10px]">
+                           <img class="rounded-3xl" src="pictures/mahabharat.jpeg" alt="">
+                        </div>
+                        <div class="repostsec pt-[10px] flex items-center  justify-between">
+                           <div class="flex gap-[5px]">
+                              <img src="img/comment.svg" alt="">
+                              <p class="text-[12px] hover:text-blue-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/repost.svg" alt="">
+                              <p class="text-[12px] hover:text-green-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/heart.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/poll2.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[10px]">
+                              <img src="img/bookmark.svg" alt=""> <img src="img/share.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="more flex justify-center items-start">
+                     <img src="img/more2.svg" alt="" />
+                  </div>
+               </div>
+
+
+
+
+            </div>
+            <div class="content  border-slate-700 border-b">
+               <div class="flex justify-between">
+                  <div class="flex rounded-3xl cursor-pointer px-2 py-2 gap-2 w-[100%]">
+                     <div class="img  w-[40px] rounded-3xl flex justify-center">
+                        <img class="w-[40px] h-[35px] rounded-3xl " src="pictures/culture.png" alt="">
+                     </div>
+                     <div class="w-[100%]">
+                        <div class="content flex gap-[5px] items-start">
+                           <div class="name font-bold flex gap-[3px] items-center">Culture Crave<img
+                                 src="img/verify.svg" alt=""></div>
+                           <div class="username text-gray-500">@CultureCrave</div>
+                           <div class="username text-gray-500"> · Mar 11</div>
+                        </div>
+                        <div class="w-[100%]"><span class="text-blue-600">#Oppenheimer</span> wins 7 total <span
+                              class="text-blue-600">#Oscars</span>
+                           • Best Picture
+                           • Best Director
+                           • Best Actor
+                           • Best Supporting Actor
+                           • Best Film Editing
+                           • Best Cinematography
+                           • Best Original Score</div>
+                        <div class="max-w[100%] pt-[10px]">
+                           <img class="rounded-3xl" src="pictures/openheimer.jpeg" alt="">
+                        </div>
+                        <div class="repostsec pt-[10px] flex items-center  justify-between">
+                           <div class="flex gap-[5px]">
+                              <img src="img/comment.svg" alt="">
+                              <p class="text-[12px] hover:text-blue-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/repost.svg" alt="">
+                              <p class="text-[12px] hover:text-green-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/heart.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/poll2.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[10px]">
+                              <img src="img/bookmark.svg" alt=""> <img src="img/share.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="more flex justify-center items-start">
+                     <img src="img/more2.svg" alt="" />
+                  </div>
+               </div>
+
+
+
+
+            </div>
+            <div class="content  border-slate-700 border-b">
+               <div class="flex justify-between">
+                  <div class="flex rounded-3xl cursor-pointer px-2 py-2 gap-2 w-[100%]">
+                     <div class="img  w-[40px] rounded-3xl flex justify-center">
+                        <img class=" h-[35px] rounded-3xl " src="pictures/profile.jpg" alt="">
+                     </div>
+                     <div class="w-[100%]">
+                        <div class="content flex gap-[5px] items-start">
+                           <div class="name font-bold flex gap-[3px] items-center">Aman Upadhyay<img
+                                 src="img/verify.svg" alt=""></div>
+                           <div class="username text-gray-500">@AmanUpa59504263</div>
+                           <div class="username text-gray-500"> · 16h</div>
+                        </div>
+                        <div class="w-[100%]">my New Profile pic!!</div>
+                        <div class="max-w[100%] pt-[10px]">
+                           <img class="rounded-3xl" src="pictures/profile.jpg" alt="">
+                        </div>
+                        <div class="repostsec pt-[10px] flex items-center  justify-between">
+                           <div class="flex gap-[5px]">
+                              <img src="img/comment.svg" alt="">
+                              <p class="text-[12px] hover:text-blue-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/repost.svg" alt="">
+                              <p class="text-[12px] hover:text-green-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/heart.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/poll2.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[10px]">
+                              <img src="img/bookmark.svg" alt=""> <img src="img/share.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="more flex justify-center items-start">
+                     <img src="img/more2.svg" alt="" />
+                  </div>
+               </div>
+
+
+
+
+            </div>
+            <div class="content  border-slate-700 border-b">
+               <div class="flex justify-between">
+                  <div class="flex rounded-3xl cursor-pointer px-2 py-2 gap-2 w-[100%]">
+                     <div class="img  w-[40px] rounded-3xl flex justify-center">
+                        <img class="w-[40px] h-[35px] rounded-3xl " src="pictures/hacker.jpg" alt="">
+                     </div>
+                     <div class="w-[100%]">
+                        <div class="content flex gap-[5px] items-start">
+                           <div class="name font-bold flex gap-[3px] items-center">Mr.Nobody<img src="img/verify.svg"
+                                 alt=""></div>
+                           <div class="username text-gray-500">@Dwebdeveloper</div>
+                           <div class="username text-gray-500"> · 16h</div>
+                        </div>
+                        <div class="w-[100%]">Video Demo</div>
+                        <div class="max-w[100%] pt-[10px]">
+                           <video controls muted autoplay class="rounded-3xl"
+                              src="pictures/currency converter.mp4"></video>
+                        </div>
+                        <div class="repostsec pt-[10px] flex items-center  justify-between">
+                           <div class="flex gap-[5px]">
+                              <img src="img/comment.svg" alt="">
+                              <p class="text-[12px] hover:text-blue-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/repost.svg" alt="">
+                              <p class="text-[12px] hover:text-green-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/heart.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/poll2.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[10px]">
+                              <img src="img/bookmark.svg" alt=""> <img src="img/share.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="more flex justify-center items-start">
+                     <img src="img/more2.svg" alt="" />
+                  </div>
+               </div>
+
+
+
+
+            </div>
+            <div class="content  border-slate-700 border-b">
+               <div class="flex justify-between">
+                  <div class="flex rounded-3xl cursor-pointer px-2 py-2 gap-2 w-[100%]">
+                     <div class="img  w-[40px] rounded-3xl flex justify-center">
+                        <img class="h-[35px] rounded-3xl " src="pictures/elon.png" alt="">
+                     </div>
+                     <div class="w-[100%]">
+                        <div class="content flex gap-[5px] items-start">
+                           <div class="name font-bold flex gap-[3px] items-center">Elon Musk<img src="img/verify.svg"
+                                 alt=""></div>
+                           <div class="username text-gray-500">@elonmusk</div>
+                           <div class="username text-gray-500"> · 1h</div>
+                        </div>
+                        <div class="w-[100%]">Bharat Mata ki Jai!!!</div>
+
+                        <div class="repostsec pt-[10px] flex items-center  justify-between">
+                           <div class="flex gap-[5px]">
+                              <img src="img/comment.svg" alt="">
+                              <p class="text-[12px] hover:text-blue-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/repost.svg" alt="">
+                              <p class="text-[12px] hover:text-green-500 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/heart.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[5px]">
+                              <img src="img/poll2.svg" alt="">
+                              <p class="text-[12px] hover:text-red-600 text-[#9b9b9b]">543</p>
+                           </div>
+                           <div class="flex gap-[10px]">
+                              <img src="img/bookmark.svg" alt=""> <img src="img/share.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="more flex justify-center items-start">
+                     <img src="img/more2.svg" alt="" />
+                  </div>
+               </div>
+
+
+
+
+            </div>
+
+         </div>
+
+      </div>
+      <!-- middle ends here -->
+
+      
+      <!-- right starts here  -->
+      <div
+         class="hidden lg:inline-block
+      right h-[100vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-800 pl-6 py-2 min-w-[400px] w-[27vw] sticky top-0">
+
+         <div class=" bg-opacity-80 sticky top-0 z-10  rounded-3xl h-[50px] bg-gray-800 flex items-center gap-5 pl-6">
+            <div><img src="img/search2.svg" alt=""></div> <input
+               class=" bg-gray-800 text-gray-500 outline-none rounded-3xl" type="text" name="" id=""
+               placeholder="Search">
+         </div>
+
+         <div class="premium pl-4 py-4 pr-10 bg-gray-800 rounded-3xl my-5">
+            <div class="text-[21px] font-bold">Subscribe To premium</div>
+            <div class="text-[14px] text-gray-300 mt-1 mb-2">Subscribe to unlock new features and if eligible, receive a
+               share of ads revenue.</div>
+            <div class="bg-blue-400 font-bold text-center rounded-3xl py-2 px-4 w-[40%]">Subscribe</div>
+         </div>
+
+         <div class="happening rounded-3xl bg-gray-800 py-2 flex flex-col gap-6 my-5">
+
+
+            <div class="heading pl-4 text-[20px] font-bold h-[40px] flex items-center">What's happening</div>
+
+            <div class="news hover:bg-slate-900 pl-4 flex gap-5">
+               <div class="w-[60%]">
+                  <div class="font-bold">Paris Fashion Week Fall 2024</div>
+                  <div class="text-[14px] text-gray-300">Fashion
+                     ·
+                     March 8, 2024</div>
+               </div>
+               <div><img class="rounded-2xl h-[80px] w-[80px]" src="pictures/fashion.jpeg" alt=""></div>
+            </div>
+
+            <div class="promotedby  hover:bg-slate-900 pl-4">
+               <div class="font-bold">#DARKRules</div>
+               <div class="text-[14px] text-gray-300">Introducing the New Safari, Harrier & Nexon #DARK</div>
+            </div>
+
+            <div class="trend  hover:bg-slate-900 px-4">
+               <div class="flex justify-between">
+                  <div class="text-[14px] text-gray-300 ">Entertainment · Trending</div>
+                  <div>...</div>
+               </div>
+               <div class="font-bold">#Oscars2024</div>
+               <div class="text-[14px] text-gray-300">614K posts</div>
+            </div>
+            <div class="trend  hover:bg-slate-900 px-4">
+               <div class="flex justify-between">
+                  <div class="text-[14px] text-gray-300 ">Entertainment · Trending</div>
+                  <div>...</div>
+               </div>
+               <div class="font-bold">#ElvishYadav</div>
+               <div class="text-[14px] text-gray-300">Trending with <span class="text-blue-500">#Maxtern</span></div>
+            </div>
+            <div class="trend  hover:bg-slate-900 px-4">
+               <div class="flex justify-between">
+                  <div class="text-[14px] text-gray-300 ">Entertainment · Sports</div>
+                  <div>...</div>
+               </div>
+               <div class="font-bold">Liverpool</div>
+               <div class="text-[14px] text-gray-300">69K posts</div>
+            </div>
+            <div class="trend  hover:bg-slate-900 px-4">
+               <div class="flex justify-between">
+                  <div class="text-[14px] text-gray-300 ">Entertainment · MernStack</div>
+                  <div>...</div>
+               </div>
+               <div class="font-bold">AmanUpadhyay</div>
+               <div class="text-[14px] text-gray-300">999M posts</div>
+            </div>
+            <div class="trend  hover:bg-slate-900 px-4">
+               <div class="flex justify-between">
+                  <div class="text-[14px] text-gray-300 ">Trending in India</div>
+                  <div>...</div>
+               </div>
+               <div class="font-bold">#Anjalians</div>
+               <div class="text-[14px] text-gray-300">11.2K posts</div>
+            </div>
+            <div class="showmore text-blue-500 w-[100%] flex pl-4 h-[30px] items-center">
+               Show More
+            </div>
+
+         </div>
+
+         <div class="follow rounded-3xl bg-gray-800 py-2 flex flex-col gap-2 my-5">
+
+            <div class="heading pl-4 text-[20px] font-bold h-[40px] flex items-center">Who to follow</div>
+
+
+
+            <div class="option  hover:bg-slate-900 flex items-center justify-between px-4">
+               <div class="flex items-center gap-2">
+                  <img class="h-[40px] w-[40px] rounded-3xl" src="pictures/cric.jpg" alt="">
+                  <div>
+                     <div class="flex font-semibold gap-1">
+                        <div>Out Of Context Cricket</div><img src="img/verify.svg" alt="">
+                     </div>
+                     <div class="text-[14px] text-gray-300">@GemsOfCricket</div>
+                  </div>
+               </div>
+
+               <div
+                  class="bg-white text-black flex items-center justify-center h-[40px] w-[70px] rounded-3xl font-semibold">
+                  Follow
+               </div>
+            </div>
+            <div class="option  hover:bg-slate-900 flex items-center justify-between px-4">
+               <div class="flex items-center gap-2">
+                  <img class="h-[40px] w-[40px] rounded-3xl" src="pictures/aot.jpg" alt="">
+                  <div>
+                     <div class="flex font-semibold gap-1">
+                        <div>Attack on Titan Wiki</div><img src="img/verify.svg" alt="">
+                     </div>
+                     <div class="text-[14px] text-gray-300">@AoTWiki</div>
+                  </div>
+               </div>
+
+               <div
+                  class="bg-white text-black flex items-center justify-center h-[40px] w-[70px] rounded-3xl font-semibold">
+                  Follow
+               </div>
+            </div>
+            <div class="option  hover:bg-slate-900 flex items-center justify-between px-4">
+               <div class="flex items-center gap-2">
+                  <img class="h-[40px] w-[40px] rounded-3xl" src="pictures/tanjiro.jpg" alt="">
+                  <div>
+                     <div class="flex font-semibold gap-1">
+                        <div>Demon Slayer</div><img src="img/verify.svg" alt="">
+                     </div>
+                     <div class="text-[14px] text-gray-300">@DemonSlayerSc</div>
+                  </div>
+               </div>
+
+               <div
+                  class="bg-white text-black flex items-center justify-center h-[40px] w-[70px] rounded-3xl font-semibold">
+                  Follow
+               </div>
+
+            </div>
+            <div class="showmore text-blue-500 w-[100%] flex pl-4 h-[30px] items-center">
+               Show More
+            </div>
+
+         </div>
+
+         <div class="fotter px-3  mb-[80px]">
+            <p class="text-[14px] text-gray-300">Terms of Service
+               Privacy Policy
+               Cookie Policy
+               Accessibility
+               Ads info
+               More
+               © 2024 X Corp.</p>
+         </div>
+
+      </div>
+      <!-- right ends here  -->
+   </div>
+</body>
+
+</html>
